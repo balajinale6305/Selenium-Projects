@@ -31,7 +31,7 @@ public class EndToEndAutomation {
 		driver.findElement(By.xpath("(//div[@class='css-76zvg2 r-homxoj r-ubezar'][normalize-space()='USD'])[1]")).click();
 		driver.findElement(By.xpath("(//*[name()='circle'])[5]")).click();
 		driver.findElement(By.xpath("(//div[@class='css-1dbjc4n r-1awozwy r-z2wwpe r-1loqt21 r-18u37iz r-1777fci r-d9fdf6 r-1w50u8q r-ah5dr5 r-1otgn73'])[1]")).click();
-//		driver.close();
+		driver.close();
 		System.out.println("Ran Successfully");
 		
 		
