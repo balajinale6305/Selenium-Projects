@@ -1,4 +1,4 @@
-package testproject;
+package tests;
 
 public class StringInJava {
 
