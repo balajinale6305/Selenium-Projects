@@ -55,7 +55,7 @@ public class base {
 
 //  check whether name you extracted is present in arrayList or not-
 
-			List itemsNeededList = Arrays.asList(itemsNeeded);
+			List<String> itemsNeededList = Arrays.asList(itemsNeeded);
 
 			if (itemsNeededList.contains(formattedName))
 
