@@ -7,6 +7,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.junit.Assert;
 
 public class JavaScriptExecutorDemo {
 
@@ -27,7 +28,8 @@ public class JavaScriptExecutorDemo {
 		
 		int total = Integer.parseInt(driver.findElement(By.cssSelector(".totalAmount")).getText().split(":")[1].trim());
 		
-		assert sum == total;
+		Assert.assertEquals(sum, total);
+		
 		
 
 	}
