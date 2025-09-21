@@ -20,8 +20,10 @@ public class Assignment4 {
 		String childID = it.next();
 		driver.switchTo().window(childID);
 		System.out.println(driver.findElement(By.cssSelector("div[class='example'] h3")).getText());
+		driver.close();
 		driver.switchTo().window(parentID);
 		System.out.println(driver.findElement(By.cssSelector("div[class='example'] h3")).getText());
+		driver.close();
 
 	}
 
