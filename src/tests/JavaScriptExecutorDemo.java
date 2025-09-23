@@ -29,6 +29,7 @@ public class JavaScriptExecutorDemo {
 		int total = Integer.parseInt(driver.findElement(By.cssSelector(".totalAmount")).getText().split(":")[1].trim());
 		
 		Assert.assertEquals(sum, total);
+		driver.close();
 		
 		
 
