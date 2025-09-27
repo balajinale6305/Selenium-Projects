@@ -16,7 +16,7 @@ public class RelativLoc {
 		System.out.println(driver.findElement(with(By.tagName("label")).above(nametext)).getText());
 		WebElement icecreams = driver.findElement(By.xpath("//label[text()='Check me out if you Love IceCreams!']"));
 		driver.findElement(with(By.tagName("input")).toLeftOf(icecreams)).click();
-		WebElement elpoymentstatus = driver.findElement(By.cssSelector("[//label[text()='Employment Status: ']"));
+		WebElement elpoymentstatus = driver.findElement(By.xpath("//label[text()='Employment Status: ']"));
 		driver.findElement(with(By.tagName("input")).toRightOf(elpoymentstatus)).click();
 		WebElement dateofbirth = driver.findElement(By.cssSelector("[for='dateofBirth']"));
 		driver.findElement(with(By.tagName("input")).below(dateofbirth)).click();
